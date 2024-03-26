@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family:  "Asap Condensed", sans-serif;
+    background-color: #141414;
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+ }
+
+.cards-placement {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+.product-card {
+    width: 300px;
+    background-color: #141414;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #202020;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.title-product {
+  white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+  overflow: hidden; /* Скрывает текст, который не помещается в элемент */
+  text-overflow: ellipsis; /* Добавляет многоточие для обозначения обрезанного текста */
+    margin: 35px 0 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+  
+.description-product {
+    margin: 10px 0 0;
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.category-name-product {
+    margin: 15px 0;
+    color: white;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 15px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    border: 1px solid #202020;
+}
+
+.price-text {
+    color: grey;
+    margin: 10px 0 0 ;
+}
+
+.price-product {
+    color: white;
+    font-size: 22px;
+    margin: 3px 0 0;
+    font-weight: 500;
+}
+
+.add-product {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding: 5px 18px;
+    background-color: #713af7;
+    border-radius: 10px;
+}
+
+.lower-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.loading-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.loading-text {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.loading {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #221F1F;
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.error-message,
+.no-products-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

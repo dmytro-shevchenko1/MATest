@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>TestMA</title>
+            <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class="loading-center" data-type="loading-section">
+                <p class="loading-text">Loading...</p>
+                <p class="loading"></p>
+            </section>
+             <section class="cards-placement">
+                    <ul class="cards-placement" data-type="products-list"></ul>
+                <template data-type="card-template">
+                    <div class="product-card">
+                        <img class="img-card" src="" alt="" width="300px" height="300px" data-card-img>
+                        <h3 class="title-product" data-card-title></h3>
+                        <p class="description-product" data-card-description></p>
+                        <p class="category-name-product" data-card-category-name></p>
+                        <div class="lower-card">
+                            <div class="price">
+                                <p class="price-text">Price</p>
+                                <p class="price-product" data-card-price></p>
+                            </div>
+                            <button class="add-product" disabled>Add To Card</button>
+                        </div>
+                    </div>
+                </template>
+             </section>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
