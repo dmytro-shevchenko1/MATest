@@ -37,9 +37,9 @@ body {
 }
 
 .title-product {
-  white-space: nowrap; /* Предотвращает перенос текста на новую строку */
-  overflow: hidden; /* Скрывает текст, который не помещается в элемент */
-  text-overflow: ellipsis; /* Добавляет многоточие для обозначения обрезанного текста */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 35px 0 0;
     color: white;
     font-size: 22px;

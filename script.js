@@ -9,18 +9,22 @@ function showLoader() {
 function hideLoader() {
     loadingSection.style.display = 'none';
 }
+
 function createCardElement(product) {
     const template = document.querySelector('[data-type="card-template"]');
     const cardClone = template.content.cloneNode(true);
 
     const cardImg = cardClone.querySelector('[data-card-img]');
     cardImg.src = product.images;
+    cardImg.onerror = function() {
+        cardImg.src = './images/noimage.jpg';
+    };
 
     const cardTitle = cardClone.querySelector('[data-card-title]');
     cardTitle.textContent = product.title;
 
     const cardDescription = cardClone.querySelector('[data-card-description]');
-    cardDescription.textContent = `${product.description.substring(0, 30)}...`
+    cardDescription.textContent = `${product.description.substring(0, 30)}...`;
 
     const cardCategory = cardClone.querySelector('[data-card-category-name]');
     cardCategory.textContent = product.category.name;
